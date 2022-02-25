@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Kumbh Sans', sans-serif;
+      /* seni seviyorun :)*/
+    }
+
+    .attribution {
+      margin-top: 35px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    body {
+      background-color: hsl(185, 75%, 39%);
+      background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+    }
+
+    .card {
+      background-image: url(bg-pattern-card.svg);
+      background-repeat: no-repeat;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+    .card img {
+      border-radius: 100%;
+      border: 5px solid #fff;
+      margin-top: 85px;
+      margin-bottom: 25px;
+    }
+
+    hr {
+      width: 100%;
+      opacity: 20%;
+      margin-bottom: 25px;
+    }
+
+    .title {
+      display: flex;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    p,
+    .age {
+      color: hsl(0, 0%, 59%);
+    }
+
+    #london-p {
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .age {
+      margin-left: 10px;
+      font-weight: 400;
+      color: hsl(227, 10%, 46%);
+    }
+
+    .name,
+    .num {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .numbers {
+      display: flex;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .col-1 {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <img src="image-victor.jpg" alt="img-vector">
+      <div class="title">
+        <div class="name">Victor Crest</div>
+        <div class="age">26</div>
+      </div>
+      <p id="london-p">London</p>
+      <hr>
+      <div class="numbers">
+        <div class="col-1">
+          <div class="num">
+            80K
+          </div>
+          <p>Followers</p>
+        </div>
+        <div class="col-1">
+          <div class="num">
+            803K
+          </div>
+          <p>Likes</p>
+        </div>
+        <div class="col-1">
+          <div class="num">
+            1.4K
+          </div>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.instagram.com/omar_frontend/">Omar Dakelbab</a>.
+    </div>
+  </main>
+  <!-- Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos -->
+
+</body>
+
+</html>
